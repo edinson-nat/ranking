@@ -113,7 +113,6 @@ html {
 .table_ranking td, .table_ranking th {
     padding: 1em;
     text-align: left;
-    border: solid 1px;
 }
 
 .table_ranking tr:nth-child(even) {
