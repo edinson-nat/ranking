@@ -23,6 +23,10 @@ html {
     font-family: 'Arimo', sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container {
     background-color: #408051;
     height: 100vh;
@@ -32,10 +36,9 @@ html {
 }
 
 .content {
-    min-width: 800px;
-    max-height: 500px;
-    width: 900px;
-    height: 100%;
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
     background-color: white;
     position: relative;
     border-radius: 4px;
@@ -83,7 +86,7 @@ html {
 }
 
 .text {
-    margin-top: 15px;
+    margin-top: 1em;
 }
 
 .paragraph {
@@ -123,4 +126,41 @@ html {
 th:nth-child(1) , th:nth-child(5) { 
     justify-content: center;
     text-align: center;
+}
+
+@media (min-height: 550px){
+    .content {
+        height: 500px;
+    }
+}
+
+@media (max-width:600px) {
+    .content{
+        padding: 0.5em;
+        overflow-x: hidden;    
+        overflow-y: scroll;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    th{
+        display: none;
+    }
+    .table_ranking td:nth-child(1){
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #408051;
+    }
+    .div-image{
+        display: flex;
+        justify-content: center;
+    }
+    .main-image{
+        float: none;
+    }
+    .text{
+        display: block;
+    }
 }
